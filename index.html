@@ -1,1 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EDM Task Portfolio</title>
+    <style>
+        /* General body and background setup */
+        body {
+            background-color: #121212;
+            background-image: url('https://i.gifer.com/5ARz.gif');  /* Replace with a valid image URL */
+            background-size: cover;
+            color: #e0e0e0;
+            font-family: 'Cooper Black', Britannic Bold;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-position: center;
+            background-attachment: fixed;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
 
+        /* Header style */
+        header {
+            background-color: rgba(30, 30, 30, 0.8);
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            color: #00bcd4; /* Cyan color */
+            text-shadow: 0 0 20px rgba(0, 188, 212, 0.7);
+            margin: 0;
+            animation: pulse 1.5s infinite alternate;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.05);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Navigation styling */
+        nav {
+            background-color: rgba(30, 30, 30, 0.9);
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        nav a {
+            color: #00bcd4;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 10px 15px;
+            margin: 0 15px;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: rgba(0, 188, 212, 0.5);
+            color: white;
+            box-shadow: 0 0 15px rgba(0, 188, 212, 0.7);
+        }
+
+        /* Section styling */
+        .section {
+            padding: 50px;
+            z-index: 1;
+        }
+
+        .box {
+            background-color: rgba(30, 30, 30, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(0, 188, 212, 0.5);
+            margin-bottom: 40px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: rgba(30, 30, 30, 0.9);
+            color: #00bcd4;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        footer p {
+            font-size: 1.1em;
+            text-shadow: 0 0 8px rgba(0, 188, 212, 0.5);
+        }
+
+        /* Add smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Midterm Lab Task 1 - Data Cleaning and Preparation</h1>
+</header>
+
+<nav>
+    <a href="#cleaning">Data Cleaning</a>
+    <a href="#normalization">Normalization</a>
+    <a href="#screenshots">Screenshots</a>
+</nav>
+
+<!-- Data Cleaning Section -->
+<section class="section" id="cleaning">
+    <div class="box">
+        <h2 style="text-align:center; color:skyblue;">📝 Step-by-Step Process</h2>
+        <ul style="list-style-type:none; padding-left:0;">
+            <p><strong>Step 1: Data Cleaning</strong></p>
+            <ul>
+                <li>Load the raw file</li>
+                <li>Fix columns width and height</li>
+                <li>TRIM words and spaces</li>
+                <li>Remove Null values</li>
+                <li>Remove Duplicates</li>
+            </ul>
+            </div>
+            <section>
+
+<!-- normalization Section -->
+<section class="section" id="normalization">
+    <div class="box">
+            <p><strong>Step 2: Normalization</strong></p>
+            <ul>
+                <li>Performed 1NF</li>
+                <li>Performed Table split using 2NF</li>
+                <li>Performed 2NF</li>
+                <li>Mapped the normalization as a physical data model</li>
+            </ul>
+        </ul>
+    </div>
+</section>
+
+<!-- Screenshots Section -->
+<section class="section" id="screenshots">
+    <h3 style="text-align:center; color:skyblue; margin-top:30px;">📷 Screenshots</h3>
+    <p style="text-align:center;">Output Before Data Cleaning:</p>
+    <img src="https://github.com/user-attachments/assets/e0375d56-cc93-4908-9492-90f4aa3642d7" alt="Raw Output" style="display:block; margin: 10px auto; max-width:90%; border-radius:12px; box-shadow: 0 0 20px #00ccff;">
+
+    <p style="text-align:center;">Output After Data Cleaning:</p>
+    <img src="https://github.com/user-attachments/assets/9daf38c7-759e-48ee-8403-af19cdfa2af1" alt="Cleaned Output" style="display:block; margin: 10px auto; max-width:90%; border-radius:12px; box-shadow: 0 0 20px #00ccff;">
+
+    <h3 style="text-align:center; color:skyblue; margin-top:30px;">📘 Physical Data Model</h3>
+    <img src="https://github.com/user-attachments/assets/105f7e3d-6e12-4af5-b09f-66e0428a5105" alt="Physical Data Model" style="display:block; margin: 10px auto; max-width:90%; border-radius:12px; box-shadow: 0 0 20px #00ccff;">
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 John Paul Recapor. All rights reserved.</p>
+    <a href="https://github.com/Soguilon/Midterm-Lab-Tasks-1" target="_blank" style="color: #00bcd4; text-shadow: 0 0 6px #00bcd4;">View Midterm Lab Task 1 on Github</a>
+</footer>
+
+</body>
+</html>
